@@ -27,6 +27,12 @@
   position: absolute;
   width: 100%;
 }
+.header--secondary {
+  position: static;
+  width: 100%;
+  top: 0;
+  background-color: #e14d2a;
+}
 .header h1 {
   padding: 1rem;
   font-family: "Rubik", sans-serif;
@@ -166,6 +172,57 @@ footer {
 }
 
 
+/*         services       */
+
+
+.services__card {
+  display: flex;
+  gap: 2rem;
+  margin: 5rem 15rem;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1.5;
+}
+.card__text p {
+  width: 100%;
+}
+.card__text span {
+  color: #fd841f;
+}
+.card__text p {
+  padding-top: 1rem;
+  color: rgb(7, 7, 7);
+  font-size: 1rem;
+  font-family: "Oxygen", sans-serif;
+}
+.card__text h2 {
+  color: rgb(7, 7, 7);
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  padding-bottom: 0.8rem;
+  border-bottom: 1.5px solid #e1a12a;
+}
+
+.card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.secondary--card,
+.secondary--card h3,
+.secondary--card p {
+  color: white;
+  background-color: #cd104d;
+}
+
+
+
+
 
 @media screen and (max-width:480px) {
   .header {
@@ -206,6 +263,9 @@ footer {
     border-radius: .25rem;
     width: 90%;
   }
+  .footer h3 {
+    text-align: center;
+  }
   .footer__bottom {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -217,5 +277,25 @@ footer {
   }
   .footer__bottom .footer__column3 {
     font-size: 1.5rem;
+  }
+
+
+
+  .services__card {
+    padding: 1rem;
+    margin: 0;
+    flex-direction: column;
+  }
+  .card__text {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__text p {
+    width: auto;
+  }
+  .card__img img {
+    width: 100%;
   }
 }
