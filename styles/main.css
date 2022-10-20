@@ -17,6 +17,10 @@
   font-weight: 600;
   padding: 1rem;
   width: fit-content;
+  transition: background-color 250ms;
+}
+.button--primary:hover {
+  background-color: #dd7861;
 }
 
 /*         navigation       */
@@ -37,6 +41,12 @@
   padding: 1rem;
   font-family: "Rubik", sans-serif;
   color: white;
+  transition: 250ms;
+  cursor: pointer;
+}
+.header h1:hover {
+  transform: scale(105%);
+  color: rgb(224, 224, 224);
 }
 .nav__menu {
   padding: 1rem;
@@ -47,6 +57,10 @@
 .nav__menu a {
   color: white;
   font-family: "Noto Sans JP", sans-serif;
+  transition: color 250ms;
+}
+.nav__menu a:hover {
+  color: rgb(196, 196, 196);
 }
 
 /*         index main       */
@@ -55,8 +69,7 @@
 .hero__main {
   max-height: 100%;
   padding: 0 5rem;
-  background: url("https://cdn.discordapp.com/attachments/969879637247291432/1024535467712057434/SS.png")
-  no-repeat fixed center;
+  background: url("https://cdn.discordapp.com/attachments/969879637247291432/1024535467712057434/SS.png") no-repeat fixed center;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -75,6 +88,11 @@
 .hero__main span {
   color: #db6f57;
   font-size: 3.5rem;
+  transition: color 250ms;
+  cursor: pointer;
+}
+.hero__main span:hover {
+  color: #ff2f00b2;
 }
 .hero__main p {
   font-family: "Noto Sans JP", sans-serif;
@@ -107,6 +125,9 @@
   color: #fd841f;
   font-family: "Montserrat", sans-serif;
 }
+.welcome__text span:hover {
+  color: #ff2f00b2;
+}
 .welcome__text p {
   width: 95%;
   border-top: 1.5px solid #e1a12a;
@@ -123,8 +144,15 @@
   align-items: center;
 }
 .welcome__img img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: .25rem;
   width: 80%;
+  transition: 250ms;
+}
+.welcome__img img:hover {
+  filter:saturate(1.5) brightness(120%);
+  transform: translateY(-10px);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 /*         footer       */
@@ -213,13 +241,22 @@ footer {
   justify-content: center;
   flex: 1;
 }
+.card__img img {
+  transition: filter 250ms;
+}
+.card__img img:hover {
+  filter: brightness(120%);
+}
 .secondary--card,
-.secondary--card h3,
+.secondary--card h2,
 .secondary--card p {
   color: white;
   background-color: #cd104d;
 }
 
+
+
+/*         old styles         */
 
 
 
@@ -233,7 +270,7 @@ footer {
     max-width: 100%;
   }
   .hero__main {
-    padding: 0;
+    padding: 3rem 0;
     justify-content: center;
     align-items: center;
     text-align: center;
