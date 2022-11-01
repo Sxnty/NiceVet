@@ -3,10 +3,9 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style-type: none;
-}
-/*         reusable       */
-.button--primary {
+  list-style-type: none; }
+
+.hero__main a {
   font-family: "Oxygen", sans-serif;
   background-color: #e14d2a;
   border: 1px solid transparent;
@@ -17,54 +16,63 @@
   font-weight: 600;
   padding: 1rem;
   width: fit-content;
-  transition: background-color 250ms;
-}
-.button--primary:hover {
-  background-color: #dd7861;
-}
+  transition: background-color 250ms; }
+  .hero__main a:hover {
+    background-color: #db6f57; }
 
-/*         navigation       */
+.shop__foods .shop__cards .shop__card button {
+  font-family: "Oxygen", sans-serif;
+  margin: 1rem 0rem 1rem;
+  background-color: #e1a12a;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 3rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  transition: background-color 250ms; }
+  .shop__foods .shop__cards .shop__card button:hover {
+    background-color: #e0ab46; }
+
+#secondary--card, #secondary--card h2, #secondary--card p {
+  color: white;
+  background-color: #cd104d; }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 100%;
-}
+  width: 100%; }
+  .header h1 {
+    padding: 1rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    transition: 250ms;
+    cursor: pointer; }
+    .header h1:hover {
+      transform: scale(105%);
+      color: #e0e0e0; }
+  .header .nav__menu {
+    padding: 1rem;
+    display: flex;
+    gap: 2rem; }
+    .header .nav__menu a {
+      color: white;
+      font-family: "Noto Sans JP", sans-serif;
+      transition: color 250ms; }
+      .header .nav__menu a:hover {
+        color: #c4c4c4; }
+
 .header--secondary {
-  position: static;
+  position: sticky;
+  z-index: 10;
   width: 100%;
   top: 0;
-  background-color: #e14d2a;
-}
-.header h1 {
-  padding: 1rem;
-  font-family: "Rubik", sans-serif;
-  color: white;
-  transition: 250ms;
-  cursor: pointer;
-}
-.header h1:hover {
-  transform: scale(105%);
-  color: rgb(224, 224, 224);
-}
-.nav__menu {
-  padding: 1rem;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav__menu a {
-  color: white;
-  font-family: "Noto Sans JP", sans-serif;
-  transition: color 250ms;
-}
-.nav__menu a:hover {
-  color: rgb(196, 196, 196);
-}
-
-/*         index main       */
-
+  background-color: #e14d2a; }
 
 .hero__main {
   max-height: 100%;
@@ -77,262 +85,198 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 1rem;
-  color: white;
-}
-.hero__main h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  font-weight: bolder;
-  width: 40%;
-}
-.hero__main span {
-  color: #db6f57;
-  font-size: 3.5rem;
-  transition: color 250ms;
-  cursor: pointer;
-}
-.hero__main span:hover {
-  color: #ff2f00b2;
-}
-.hero__main p {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1rem;
-  width: 35%;
-}
+  color: white; }
+  .hero__main h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    width: 40%; }
+  .hero__main span {
+    color: #db6f57;
+    font-size: 3.5rem;
+    transition: color 250ms;
+    cursor: pointer; }
+    .hero__main span:hover {
+      color: #ff2f00b2; }
+  .hero__main p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1rem;
+    width: 35%; }
 
-
-/*         index welcome section        */
 .welcome {
   padding: 2rem 15rem;
-  display: flex;
-}
-.welcome__text {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.welcome__text h2 {
-  width: 100%;
-  color: rgb(7, 7, 7);
-  font-size: 2.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-}
-.welcome__text span {
-  font-size: 3rem;
-  color: #fd841f;
-  font-family: "Montserrat", sans-serif;
-}
-.welcome__text span:hover {
-  color: #ff2f00b2;
-}
-.welcome__text p {
-  width: 95%;
-  border-top: 1.5px solid #e1a12a;
-  padding-top: 1rem;
-  color: rgb(7, 7, 7);
-  font-size: 1rem;
-  font-family: "Oxygen", sans-serif;
-  font-weight: lighter;
-}
-.welcome__img {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.welcome__img img {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: .25rem;
-  width: 80%;
-  transition: 250ms;
-}
-.welcome__img img:hover {
-  filter:saturate(1.5) brightness(120%);
-  transform: translateY(-10px);
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-/*         footer       */
-footer {
-  background-color: #181818;
-  padding: 1rem;
-}
-.footer h3 {
-  font-size: 2rem;
-  font-family: "Rubik", sans-serif;
-  color: #fd841f;
-}
-.footer__bottom {
-  padding: 1rem 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.footer__bottom>div {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.footer__row {
-  display: flex;
-  gap: .5rem;
-}
-.footer__column1{
-  display: flex;
-  justify-content: end;
-}
-.footer__bottom .footer__column3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-}
-.footer i {
-  color: #fd841f;
-}
-.footer p {
-  color: white;
-  font-family: "Oxygen", sans-serif;
-}
-
-
-/*         services       */
-
+  display: flex; }
+  .welcome .welcome__text {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; }
+    .welcome .welcome__text h2 {
+      width: 100%;
+      color: #070707;
+      font-size: 2.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: lighter; }
+    .welcome .welcome__text span {
+      font-size: 3rem;
+      cursor: pointer;
+      color: #fd841f;
+      font-family: "Montserrat", sans-serif; }
+      .welcome .welcome__text span:hover {
+        color: #ff2f00b2; }
+    .welcome .welcome__text p {
+      width: 95%;
+      border-top: 1.5px solid #e1a12a;
+      padding-top: 1rem;
+      color: #070707;
+      font-size: 1rem;
+      font-family: "Oxygen", sans-serif;
+      font-weight: lighter; }
+  .welcome .welcome__img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .welcome .welcome__img img {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: .25rem;
+      width: 80%;
+      transition: 250ms; }
+      .welcome .welcome__img img:hover {
+        filter: saturate(1.5) brightness(120%);
+        transform: translateY(-10px);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; }
 
 .services__card {
   display: flex;
   gap: 2rem;
-  margin: 5rem 15rem;
-}
-.card__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1.5;
-}
-.card__text p {
-  width: 100%;
-}
-.card__text span {
-  color: #fd841f;
-}
-.card__text p {
-  padding-top: 1rem;
-  color: rgb(7, 7, 7);
-  font-size: 1rem;
-  font-family: "Oxygen", sans-serif;
-}
-.card__text h2 {
-  color: rgb(7, 7, 7);
-  font-size: 2.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-  padding-bottom: 0.8rem;
-  border-bottom: 1.5px solid #e1a12a;
-}
-
-.card__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.card__img img {
-  transition: filter 250ms;
-}
-.card__img img:hover {
-  filter: brightness(120%);
-}
-.secondary--card,
-.secondary--card h2,
-.secondary--card p {
-  color: white;
-  background-color: #cd104d;
-}
-
-
-
-/*         old styles         */
-
-
-
-
-@media screen and (max-width:480px) {
-  .header {
+  margin: 5rem 15rem; }
+  .services__card .card__text {
+    display: flex;
     flex-direction: column;
-  }
-  .nav__menu {
-    gap: .5rem;
-    max-width: 100%;
-  }
-  .hero__main {
-    padding: 3rem 0;
     justify-content: center;
+    flex: 1.5; }
+    .services__card .card__text p {
+      width: 100%;
+      padding-top: 1rem;
+      color: #070707;
+      font-size: 1rem;
+      font-family: "Oxygen", sans-serif; }
+    .services__card .card__text span {
+      color: #fd841f; }
+    .services__card .card__text h2 {
+      color: #070707;
+      font-size: 2.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: lighter;
+      padding-bottom: 0.8rem;
+      border-bottom: 1.5px solid #e1a12a; }
+  .services__card .card__img {
+    display: flex;
     align-items: center;
-    text-align: center;
-  }
-  .hero__main h2 {
-    width: 100%;
-  }
-  .hero__main p {
-    width: 90%;
-    padding: 1rem;
-  }
-  .welcome {
-    padding: 0;
-    flex-direction: column;
-  }
-  .welcome__text {
-    padding: 1rem 0;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .welcome__text h2 {
-    font-size: 1.2rem;
-  }
-  .welcome__img img{
-    padding: 1rem;
+    flex: 1; }
+    .services__card .card__img img {
+      transition: filter 250ms; }
+      .services__card .card__img img:hover {
+        filter: brightness(120%); }
+
+.shop__banner {
+  display: flex;
+  flex-direction: column; }
+  .shop__banner .shop__bottom {
+    display: flex;
+    border: 1px solid #e14d2a;
     border-radius: .25rem;
-    width: 90%;
-  }
-  .footer h3 {
-    text-align: center;
-  }
-  .footer__bottom {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    text-align: center;
-  }
-  .footer__row {
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__bottom .footer__column3 {
-    font-size: 1.5rem;
-  }
-
-
-
-  .services__card {
     padding: 1rem;
-    margin: 0;
+    margin: 2rem; }
+    .shop__banner .shop__bottom .shop__icons {
+      flex: 1;
+      padding: .5rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+      font-family: "Noto Sans JP", sans-serif;
+      font-weight: bold; }
+    .shop__banner .shop__bottom .icons--border {
+      border-left: 1px solid #fd841f; }
+
+.shop__foods {
+  margin: 2rem; }
+  .shop__foods .shop__titles {
+    background-color: #e14d2a;
+    display: flex;
     flex-direction: column;
-  }
-  .card__text {
-    padding: 0;
-    text-align: center;
     justify-content: center;
-    align-items: center;
-  }
-  .card__text p {
-    width: auto;
-  }
-  .card__img img {
-    width: 100%;
-  }
-}
+    align-items: flex-start;
+    padding: 1rem; }
+    .shop__foods .shop__titles h2 {
+      color: white;
+      font-size: 2rem;
+      font-family: "Noto Sans JP", sans-serif;
+      font-weight: bolder; }
+    .shop__foods .shop__titles span {
+      color: #fd841f;
+      font-size: 2.5rem; }
+    .shop__foods .shop__titles p {
+      font-size: 1rem;
+      color: #fff2e8;
+      font-family: "Oxygen", sans-serif;
+      font-weight: bolder; }
+  .shop__foods .shop__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .shop__foods .shop__cards .shop__card {
+      transition: transform 250ms, box-shadow 250ms;
+      text-align: center; }
+      .shop__foods .shop__cards .shop__card:hover {
+        transform: scale(110%); }
+      .shop__foods .shop__cards .shop__card img {
+        width: 100%;
+        transition: filter 250ms; }
+        .shop__foods .shop__cards .shop__card img:hover {
+          filter: saturate(120%); }
+      .shop__foods .shop__cards .shop__card h3 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        color: #e1a12a; }
+      .shop__foods .shop__cards .shop__card p {
+        color: #202020;
+        font-family: "Oxygen", sans-serif;
+        font-weight: bold; }
+
+.footer {
+  background-color: #181818;
+  padding: 1rem; }
+  .footer h3 {
+    font-size: 2rem;
+    font-family: "Rubik", sans-serif;
+    color: #fd841f; }
+  .footer i {
+    color: #fd841f; }
+  .footer p {
+    color: white;
+    font-family: "Oxygen", sans-serif; }
+  .footer .footer__bottom {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .footer .footer__bottom > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; }
+    .footer .footer__bottom .footer__row {
+      display: flex;
+      gap: .5rem; }
+    .footer .footer__bottom .footer__column1 {
+      display: flex;
+      justify-content: end; }
+    .footer .footer__bottom .footer__column3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem; }

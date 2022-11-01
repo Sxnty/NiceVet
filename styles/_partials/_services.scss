@@ -1,0 +1,41 @@
+.services__card {
+    display: flex;
+    gap: 2rem;
+    margin: 5rem 15rem;
+    .card__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1.5;
+        p {
+            width: 100%;
+            padding-top: 1rem;
+            color: rgb(7, 7, 7);
+            font-size: 1rem;
+            font-family: $secondary-font;
+        }
+        span {
+            color: $secondary-color;
+        }
+        h2 {
+            color: rgb(7, 7, 7);
+            font-size: 2.5rem;
+            font-family: $title-font;
+            font-weight: lighter;
+            padding-bottom: 0.8rem;
+            border-bottom: 1.5px solid #e1a12a;
+        }
+    }
+    .card__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        img {
+            transition: filter 250ms;
+            &:hover {
+                filter: brightness(120%);
+            }
+        }
+    }
+  }

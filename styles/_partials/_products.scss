@@ -1,0 +1,83 @@
+.shop__banner {
+    display: flex;
+    flex-direction: column;
+    .shop__bottom {
+        display: flex;
+        border: 1px solid $main-color;
+        border-radius: .25rem;
+        padding: 1rem;
+        margin: 2rem;
+        .shop__icons {
+            flex: 1;
+            padding: .5rem;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 1rem;
+            font-family: $third-font;
+            font-weight: bold;
+        }
+        .icons--border {
+            border-left: 1px solid $secondary-color;
+
+        }
+    }
+}
+.shop__foods {
+    margin: 2rem;
+    .shop__titles {
+        background-color: $main-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+        h2 {
+            color: white;
+            font-size: 2rem;
+            font-family: $third-font;
+            font-weight: bolder;
+        }
+        span {
+            color: $secondary-color;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1rem;
+            color: #fff2e8;
+            font-family: $secondary-font;
+            font-weight: bolder;
+        }
+    }
+    .shop__cards {
+        display: grid;
+        grid-template-columns:repeat(4, 1fr) ;
+        .shop__card {
+            transition: transform 250ms, box-shadow 250ms;
+            &:hover {
+                transform: scale(110%);
+            }
+            text-align: center;
+            img {
+                width: 100%;
+                transition: filter 250ms;
+                &:hover {
+                    filter: saturate(120%);
+                }
+            }
+            h3 {
+                font-size: 1.5rem;
+                font-family: $title-font;
+                color: $third-color;
+            }
+            p {
+                color: #202020;
+                font-family: $secondary-font;
+                font-weight: bold;
+            }
+            button {
+                @extend %button--secondary;
+            }
+        }
+    }
+}
