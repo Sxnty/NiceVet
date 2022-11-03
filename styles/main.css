@@ -334,7 +334,7 @@
 .contact__banner {
   padding: 2rem;
   text-align: center; }
-  .contact__banner h3 {
+  .contact__banner h2 {
     font-size: 3rem;
     font-family: "Montserrat", sans-serif;
     color: #0a0a0a; }
@@ -373,7 +373,7 @@
   .contact__networks .network__text {
     padding: 2rem;
     border-bottom: 1px solid black; }
-    .contact__networks .network__text h4 {
+    .contact__networks .network__text h3 {
       font-size: 2rem;
       font-family: "Montserrat", sans-serif;
       color: #0a0a0a; }
