@@ -1,0 +1,106 @@
+.about__banner {
+    padding: 2rem 15rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    .img1 {
+        width: 100%;
+        margin: auto;
+    }
+    .banner__text{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        gap: 2rem;
+        h2 {
+            font-family: $title-font;
+            font-size: 3rem;
+        }
+        p {
+            font-family: $secondary-font;
+            font-weight: bold;
+        }
+    }
+}
+.about__quote {
+    background-color: #cd104d;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    .quote__left {
+        flex: 1;
+        span {
+            color: #ffffffb0;
+            font-family: $secondary-font;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+        p {
+            font-family: $secondary-font;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        i {
+            color: $third-color;
+            font-size: 3rem;
+        }
+        .fa-quote-left {
+            display: flex;
+            justify-content: start;
+            padding: 0 2rem;
+        }
+        .fa-quote-right {
+            display: flex;
+            justify-content: end;
+            padding: 0 2rem;
+        }
+    }
+    img {
+        border-radius: .25rem;
+        flex: 1;
+        width: 5%;
+    }
+}
+.about__team {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 50%;
+    margin: auto;
+    img {
+        transition: filter 250ms;
+        object-fit:cover;
+        height: 100%;
+        width: 100%;
+        filter: grayscale(90%);
+        &:hover {
+            filter: grayscale(0%);
+            
+        }
+    }
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img4 img5";
+    .img1 {
+
+        grid-area: img1;
+    }
+    .img2 {
+        grid-area: img2;
+    }
+    .img3 {
+        grid-area: img3;
+    }
+    .img4 {
+        grid-area: img4;
+    }
+    .img5 {
+        grid-area: img5;
+    }
+}
