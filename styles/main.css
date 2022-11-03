@@ -178,6 +178,7 @@
     justify-content: center;
     flex: 1; }
     .services__card .card__img img {
+      width: 100%;
       transition: filter 250ms; }
       .services__card .card__img img:hover {
         filter: brightness(120%); }

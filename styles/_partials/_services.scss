@@ -32,6 +32,7 @@
         justify-content: center;
         flex: 1;
         img {
+            width: 100%;
             transition: filter 250ms;
             &:hover {
                 filter: brightness(120%);
