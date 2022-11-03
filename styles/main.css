@@ -179,6 +179,7 @@
     flex: 1; }
     .services__card .card__img img {
       width: 100%;
+      
       transition: filter 250ms; }
       .services__card .card__img img:hover {
         filter: brightness(120%); }
@@ -312,7 +313,8 @@
   grid-template-rows: repeat(2, 1fr);
   width: 50%;
   margin: auto;
-  grid-template-areas: "img1 img2 img3" "img4 img4 img5"; }
+  grid-template-areas: "img1 img2 img3"
+ "img4 img4 img5"; }
   .about__team img {
     transition: filter 250ms;
     object-fit: cover;
@@ -506,7 +508,11 @@
   .about__team {
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5";
+    grid-template-areas: "img1"
+ "img2"
+ "img3"
+ "img4"
+ "img5";
     padding: 0;
     margin: 0; }
     .about__team img {
